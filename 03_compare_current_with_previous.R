@@ -27,6 +27,10 @@ source("02_scrape_nominees.R")
 #load current data
 source("02_scrape_nominees.R")
 
+# load archived data to compare against
+staff_data_previous <- readRDS("archived_data/staff_data_archived_2020_11_24t14_00.rds")
+# staff_data_previous <- readRDS("archived_data/staff_data_archived_2020_11_25t14_00.rds")
+staff_data_previous
 
 #### AGENCY TEAMS ##### --------------------------------------------------------
 
