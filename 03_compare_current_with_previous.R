@@ -24,9 +24,8 @@ source("02_scrape_nominees.R")
 
 #Your code here#
 
-
-
-
+#load current data
+source("02_scrape_nominees.R")
 
 
 #### AGENCY TEAMS ##### --------------------------------------------------------
