@@ -38,6 +38,8 @@ source("02_scrape_nominees.R")
 transition_data_current <- readRDS("processed_data/transition_data_scraped.rds")
 transition_data_current
 
+
+
 # load archived data to compare against
 transition_data_previous <- readRDS("archived_data/transition_data_archived_2020_11_24t09_52.rds")
 # transition_data_previous <- readRDS("archived_data/transition_data_archived_2020_11_25t09_34.rds")
