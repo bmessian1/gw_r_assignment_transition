@@ -117,7 +117,26 @@ anti_join(02_scrape_nominees.R, staff_data_previous, by = "idstring")
 
 Add code to show the total number of people currently named to the WH senior staff, vs. the previous total number.  
   
+# Compare TOTALS 
+ <- transition_data_current %>% 
+  count(agency, name = "current_count")
 
+staffcount_current
+
+staffcount_previous <- staff_data_previous %>% 
+  count(staff, name = "previous_count")
+
+staff_previous
+
+#join
+staffcount_compare <- left_join(staffcount_current, staffcount_previous, by = "staff")
+staffcount_compare
+
+#add change columns
+staffcount_compare <- staffcount_compare %>% 
+  mutate(
+    change = current_count - previous_count
+  )
 ```{r, echo=FALSE}
 
 
