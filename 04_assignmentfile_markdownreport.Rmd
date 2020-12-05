@@ -103,7 +103,7 @@ Come up with the necessary R code to return the following for the WH senior staf
 
 Below write code to show the new names added to the senior staff lists since the prior data provided.  
   
-
+anti_join(02_scrape_nominees.R, staff_data_previous, by = "idstring") 
 ```{r, echo=FALSE}
 
 
