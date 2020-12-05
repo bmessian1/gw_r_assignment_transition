@@ -32,6 +32,11 @@ staff_data_previous <- readRDS("archived_data/staff_data_archived_2020_11_24t14_
 # staff_data_previous <- readRDS("archived_data/staff_data_archived_2020_11_25t14_00.rds")
 staff_data_previous
 
+
+#find new records of names added since previous
+newnames <- anti_join(02_scrape_nominees.R, staff_data_previous, by = "idstring")
+
+
 #### AGENCY TEAMS ##### --------------------------------------------------------
 
 
